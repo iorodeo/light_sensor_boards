@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CVpcb (20090216-final) date = Tue 06 Oct 2009 15:41:50 PDT
+
+BeginCmp
+TimeStamp = /4ACA5CB8;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA5CBC;
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA5D39;
+Reference = C3;
+ValeurCmp = 10uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA5D3C;
+Reference = C4;
+ValeurCmp = 0.1uF;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA6301;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED_SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA6830;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED_SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4AC69DD9;
+Reference = K1;
+ValeurCmp = POWER;
+IdModule  = SCREW_TERMINAL_3;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA545F;
+Reference = P1;
+ValeurCmp = DIN_4_SHIELD;
+IdModule  = DIN_4_RT_SLIM_SHIELD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA5743;
+Reference = P2;
+ValeurCmp = BNC;
+IdModule  = BNC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA62EF;
+Reference = R1;
+ValeurCmp = 1.3k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACA6821;
+Reference = R2;
+ValeurCmp = 1.3k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4ACB8454;
+Reference = U1;
+ValeurCmp = BUF634;
+IdModule  = BUF634_8SOIC;
+EndCmp
+
+EndListe

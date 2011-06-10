@@ -1,0 +1,438 @@
+EESchema Schematic File Version 2  date Thu 09 Jun 2011 06:57:39 PM PDT
+LIBS:power
+LIBS:device
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:contrib
+LIBS:valves
+LIBS:light_sensor_boards
+LIBS:PowerSignal-cache
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title "WingTach PowerSignal"
+Date "6 oct 2009"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 6000 3000 0    60   ~ 0
+SignalOut
+Text Label 4050 5150 0    60   ~ 0
+SignalOpt101
+Wire Wire Line
+	6450 2000 6000 2000
+Wire Wire Line
+	6000 2000 6000 3000
+Wire Wire Line
+	6000 3000 5450 3000
+Wire Wire Line
+	4350 3000 3950 3000
+Wire Wire Line
+	3950 3000 3950 5150
+Wire Wire Line
+	3950 5150 4900 5150
+Wire Wire Line
+	6300 2400 6300 2200
+Wire Wire Line
+	6300 2200 6450 2200
+Wire Wire Line
+	8750 6050 8750 6450
+Wire Wire Line
+	8750 4850 8750 4500
+Wire Wire Line
+	8750 4500 9100 4500
+Wire Wire Line
+	9100 4500 9100 4600
+Wire Wire Line
+	8100 5350 8100 5650
+Connection ~ 2500 5150
+Wire Wire Line
+	2500 5150 2500 4700
+Wire Wire Line
+	2500 4700 2700 4700
+Wire Wire Line
+	2700 4700 2700 4800
+Wire Wire Line
+	2750 5550 2250 5550
+Connection ~ 1200 5550
+Wire Wire Line
+	1200 5850 1200 5550
+Wire Wire Line
+	1400 5550 1000 5550
+Connection ~ 4550 5950
+Wire Wire Line
+	5500 5950 4550 5950
+Wire Wire Line
+	6100 5350 6650 5350
+Wire Wire Line
+	6650 5350 6650 5150
+Connection ~ 9200 2750
+Wire Wire Line
+	9500 2750 9200 2750
+Connection ~ 8950 3050
+Wire Wire Line
+	9500 3050 8750 3050
+Wire Wire Line
+	9200 2650 9200 2950
+Wire Wire Line
+	9200 2950 9500 2950
+Wire Wire Line
+	8950 3100 8950 3050
+Wire Wire Line
+	9500 3150 9200 3150
+Wire Wire Line
+	9200 3150 9200 3600
+Wire Wire Line
+	9500 3500 9200 3500
+Connection ~ 9200 3500
+Wire Wire Line
+	6400 4800 6400 5150
+Wire Wire Line
+	6400 5150 6100 5150
+Wire Wire Line
+	4900 5350 4550 5350
+Wire Wire Line
+	4550 5350 4550 6300
+Wire Wire Line
+	1400 5150 1000 5150
+Wire Wire Line
+	1200 4950 1200 5150
+Connection ~ 1200 5150
+Wire Wire Line
+	2750 5150 2250 5150
+Wire Wire Line
+	2500 5850 2500 5550
+Connection ~ 2500 5550
+Wire Wire Line
+	8100 4600 8100 4850
+Wire Wire Line
+	8100 6050 8100 6450
+Wire Wire Line
+	8750 5350 8750 5650
+Wire Wire Line
+	4350 3100 4200 3100
+Wire Wire Line
+	4200 3100 4200 3350
+Wire Wire Line
+	5450 2900 5700 2900
+Wire Wire Line
+	5700 2900 5700 2550
+NoConn ~ 5450 3100
+NoConn ~ 5450 2800
+NoConn ~ 4350 2900
+NoConn ~ 4350 2800
+$Comp
+L VAA #PWR7
+U 1 1 4ACB846E
+P 5700 2550
+F 0 "#PWR7" H 5700 2610 30  0001 C CNN
+F 1 "VAA" H 5700 2660 30  0000 C CNN
+	1    5700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L -VAA #PWR5
+U 1 1 4ACB8465
+P 4200 3350
+F 0 "#PWR5" H 4200 3450 20  0001 C CNN
+F 1 "-VAA" H 4200 3450 30  0000 C CNN
+	1    4200 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L BUF634 U1
+U 1 1 4ACB8454
+P 4900 2950
+F 0 "U1" H 4900 2700 60  0000 C CNN
+F 1 "BUF634" H 4900 3200 60  0000 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR01
+U 1 1 4ACB834C
+P 6300 2400
+F 0 "#PWR01" H 6300 2400 40  0001 C CNN
+F 1 "AGND" H 6300 2330 50  0000 C CNN
+	1    6300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L -VAA #PWR13
+U 1 1 4ACA6845
+P 8750 6450
+F 0 "#PWR13" H 8750 6550 20  0001 C CNN
+F 1 "-VAA" H 8750 6550 30  0000 C CNN
+	1    8750 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 4ACA6830
+P 8750 5850
+F 0 "D2" H 8750 5950 50  0000 C CNN
+F 1 "LED" H 8750 5750 50  0000 C CNN
+	1    8750 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 4ACA6821
+P 8750 5100
+F 0 "R2" V 8830 5100 50  0000 C CNN
+F 1 "1.3k" V 8750 5100 50  0000 C CNN
+	1    8750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR02
+U 1 1 4ACA681A
+P 9100 4600
+F 0 "#PWR02" H 9100 4600 40  0001 C CNN
+F 1 "AGND" H 9100 4530 50  0000 C CNN
+	1    9100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR03
+U 1 1 4ACA6310
+P 8100 6450
+F 0 "#PWR03" H 8100 6450 40  0001 C CNN
+F 1 "AGND" H 8100 6380 50  0000 C CNN
+	1    8100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 4ACA6301
+P 8100 5850
+F 0 "D1" H 8100 5950 50  0000 C CNN
+F 1 "LED" H 8100 5750 50  0000 C CNN
+	1    8100 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 4ACA62EF
+P 8100 5100
+F 0 "R1" V 8180 5100 50  0000 C CNN
+F 1 "1.3k" V 8100 5100 50  0000 C CNN
+	1    8100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR11
+U 1 1 4ACA62E1
+P 8100 4600
+F 0 "#PWR11" H 8100 4660 30  0001 C CNN
+F 1 "VAA" H 8100 4710 30  0000 C CNN
+	1    8100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 4ACA5D3C
+P 2750 5350
+F 0 "C4" H 2800 5450 50  0000 L CNN
+F 1 "0.1uF" H 2800 5250 50  0000 L CNN
+	1    2750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 4ACA5D39
+P 2250 5350
+F 0 "C3" H 2300 5450 50  0000 L CNN
+F 1 "10uF" H 2300 5250 50  0000 L CNN
+	1    2250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L -VAA #PWR3
+U 1 1 4ACA5D1E
+P 2500 5850
+F 0 "#PWR3" H 2500 5950 20  0001 C CNN
+F 1 "-VAA" H 2500 5950 30  0000 C CNN
+	1    2500 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L AGND #PWR04
+U 1 1 4ACA5D1A
+P 2700 4800
+F 0 "#PWR04" H 2700 4800 40  0001 C CNN
+F 1 "AGND" H 2700 4730 50  0000 C CNN
+	1    2700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4ACA5CBC
+P 1400 5350
+F 0 "C2" H 1450 5450 50  0000 L CNN
+F 1 "0.1uF" H 1450 5250 50  0000 L CNN
+	1    1400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4ACA5CB8
+P 1000 5350
+F 0 "C1" H 1050 5450 50  0000 L CNN
+F 1 "10uF" H 1050 5250 50  0000 L CNN
+	1    1000 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR05
+U 1 1 4ACA5CA6
+P 1200 5850
+F 0 "#PWR05" H 1200 5850 40  0001 C CNN
+F 1 "AGND" H 1200 5780 50  0000 C CNN
+	1    1200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR1
+U 1 1 4ACA5CA1
+P 1200 4950
+F 0 "#PWR1" H 1200 5010 30  0001 C CNN
+F 1 "VAA" H 1200 5060 30  0000 C CNN
+	1    1200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR06
+U 1 1 4ACA5B14
+P 4550 6300
+F 0 "#PWR06" H 4550 6300 40  0001 C CNN
+F 1 "AGND" H 4550 6230 50  0000 C CNN
+	1    4550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -VAA #PWR9
+U 1 1 4ACA5B0E
+P 6400 4800
+F 0 "#PWR9" H 6400 4900 20  0001 C CNN
+F 1 "-VAA" H 6400 4900 30  0000 C CNN
+	1    6400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR10
+U 1 1 4ACA5AFE
+P 6650 5150
+F 0 "#PWR10" H 6650 5210 30  0001 C CNN
+F 1 "VAA" H 6650 5260 30  0000 C CNN
+	1    6650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 4ACA5A94
+P 9500 3500
+F 0 "#FLG07" H 9500 3770 30  0001 C CNN
+F 1 "PWR_FLAG" H 9500 3730 30  0000 C CNN
+	1    9500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 4ACA5A90
+P 8750 3050
+F 0 "#FLG08" H 8750 3320 30  0001 C CNN
+F 1 "PWR_FLAG" H 8750 3280 30  0000 C CNN
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 4ACA5A86
+P 9500 2750
+F 0 "#FLG09" H 9500 3020 30  0001 C CNN
+F 1 "PWR_FLAG" H 9500 2980 30  0000 C CNN
+	1    9500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L -VAA #PWR17
+U 1 1 4ACA5A20
+P 9200 3600
+F 0 "#PWR17" H 9200 3700 20  0001 C CNN
+F 1 "-VAA" H 9200 3700 30  0000 C CNN
+	1    9200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L AGND #PWR010
+U 1 1 4ACA5A16
+P 8950 3100
+F 0 "#PWR010" H 8950 3100 40  0001 C CNN
+F 1 "AGND" H 8950 3030 50  0000 C CNN
+	1    8950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VAA #PWR16
+U 1 1 4ACA5A04
+P 9200 2650
+F 0 "#PWR16" H 9200 2710 30  0001 C CNN
+F 1 "VAA" H 9200 2760 30  0000 C CNN
+	1    9200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 4ACA5743
+P 6800 2100
+F 0 "P2" V 6750 2100 40  0000 C CNN
+F 1 "BNC" V 6850 2100 40  0000 C CNN
+	1    6800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIN_4_SHIELD P1
+U 1 1 4ACA545F
+P 5500 5350
+F 0 "P1" H 5500 5350 70  0000 C CNN
+F 1 "DIN_4_SHIELD" H 5500 5000 70  0000 C CNN
+	1    5500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 4AC69DD9
+P 9850 3050
+F 0 "K1" V 9800 3050 50  0000 C CNN
+F 1 "POWER" V 9900 3050 40  0000 C CNN
+	1    9850 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
