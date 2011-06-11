@@ -3,35 +3,37 @@
   (base_design PowerSignal.dsn)
   (placement
     (resolution mil 10)
-    (component SCREW_TERMINAL_3
-      (place K1 58500 -32200 front 180)
-    )
     (component BNC
-      (place P2 60500 -41500 front 270)
+      (place P2 61500 -30500 front 0)
     )
     (component BUF634_8SOIC
-      (place U1 58500 -46600 front 0)
+      (place U1 58500 -41000 back 180)
     )
     (component DIN_4_RT_SLIM_SHIELD
-      (place P1 58500 -52300 front 0)
+      (place P1 58500 -53750 front 0)
     )
-    (component SM0805
-      (place R2 56000 -34600 front 270)
-      (place R1 61000 -34600 front 270)
-      (place C4 56000 -46600 front 270)
-      (place C3 54300 -47700 front 270)
-      (place C2 61000 -46600 front 270)
-      (place C1 62700 -47700 front 270)
+    (component DCJACK_2PIN
+      (place P3 54250 -34500 front 90)
     )
-    (component LED_SM0805
-      (place D2 56000 -36900 front 270)
-      (place D1 61000 -36900 front 270)
+    (component DCW08
+      (place DC1 58500 -42250 front 0)
     )
-    (component MNT
-      (place MNT1 54500 -31500 front 0)
-      (place MNT3 54500 -51500 front 0)
-      (place MNT4 62500 -51500 front 0)
-      (place MNT2 62500 -31500 front 0)
+    (component MOUNT_HOLE_4_40
+      (place P7 63500 -41500 front 0)
+      (place P6 53500 -51500 front 0)
+      (place P5 63500 -51500 front 0)
+      (place P4 53500 -41500 front 0)
+      (place P10 63500 -36500 front 0)
+      (place P9 57250 -31500 front 0)
+      (place P8 53500 -36500 front 0)
+    )
+    (component SM1210
+      (place C6 55500 -41000 back 90)
+      (place C5 61500 -41000 back 90)
+      (place C1 60000 -45750 back 270)
+      (place C2 63000 -45750 back 270)
+      (place C3 57000 -45750 back 90)
+      (place C4 54000 -45750 back 90)
     )
   )
   (was_is
@@ -40,341 +42,237 @@
     (resolution mil 10)
     (parser
       (host_cad "Kicad's PCBNEW")
-      (host_version "(20090216-final)")
+      (host_version "(2010-03-14)-final")
     )
     (library_out 
-      (padstack "Via[0-1]_45:25_mil"
+      (padstack "Via[0-1]_35:25_mil"
         (shape
-          (circle Component 450 0 0)
+          (circle Component 350 0 0)
         )
         (shape
-          (circle Copper 450 0 0)
+          (circle Copper 350 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_35:0_mil"
+        (shape
+          (circle Component 350 0 0)
+        )
+        (shape
+          (circle Copper 350 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_46:36_mil"
+        (shape
+          (circle Component 460 0 0)
+        )
+        (shape
+          (circle Copper 460 0 0)
         )
         (attach off)
       )
     )
     (network_out 
-      (net AGND
-        (wire
-          (path Component 180
-            60873 -37469
-            58500 -39842
-            58500 -40500
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -37469
-            60873 -37469
-          )
-        )
-        (wire
-          (path Component 180
-            60873 -37469
-            58500 -35096
-            58500 -34225
-          )
-        )
-        (wire
-          (path Component 180
-            58500 -34225
-            58500 -32200
-          )
-        )
-        (wire
-          (path Component 180
-            58500 -34225
-            56488 -34225
-          )
-        )
-        (wire
-          (path Component 180
-            56000 -34225
-            56488 -34225
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -37275
-            61000 -37469
-          )
-        )
-        (wire
-          (path Component 180
-            62700 -48075
-            61712 -48075
-            61000 -47363
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -46975
-            61000 -47363
-          )
-        )
-        (wire
-          (path Component 180
-            59131 -47664
-            60699 -47664
-            61000 -47363
-          )
-        )
-        (wire
-          (path Component 180
-            57742 -45217
-            57793 -45268
-            57793 -46326
-            59131 -47664
-          )
-        )
-        (wire
-          (path Component 180
-            59131 -47664
-            59131 -47774
-            57435 -49470
-          )
-        )
-        (wire
-          (path Component 180
-            56000 -46225
-            56000 -45837
-          )
-        )
-        (wire
-          (path Component 180
-            56000 -45837
-            56620 -45217
-            57742 -45217
-          )
-        )
-        (wire
-          (path Component 180
-            58500 -40500
-            57742 -41258
-            57742 -45217
-          )
-        )
-        (wire
-          (path Copper 180
-            57435 -49470
-            57435 -49935
-            55980 -51390
-          )
-        )
-        (wire
-          (path Component 180
-            54300 -46937
-            55288 -46937
-            56000 -46225
-          )
-        )
-        (wire
-          (path Component 180
-            54300 -47325
-            54300 -46937
-          )
-        )
-      )
       (net "-VAA"
         (wire
-          (path Component 180
-            56000 -37275
-            56000 -37663
+          (path Copper 360
+            56216 -46350
+            55950 -46350
+            55500 -46800
           )
         )
         (wire
-          (path Component 180
-            54300 -48075
-            53811 -47586
-            53811 -39852
-            56000 -37663
+          (path Copper 360
+            56325 -46350
+            56216 -46350
           )
         )
         (wire
-          (path Component 180
-            55175 -48075
-            54300 -48075
+          (path Copper 360
+            56216 -46350
+            56216 -43493
+            56284 -43425
+            56284 -40663
           )
         )
         (wire
-          (path Component 180
-            56000 -37275
-            55511 -36786
-            55511 -33604
-            56915 -32200
-            57500 -32200
+          (path Copper 360
+            54000 -46350
+            55050 -46350
+            55500 -46800
           )
         )
         (wire
-          (path Component 180
-            57370 -47350
-            56957 -47350
+          (path Component 360
+            55500 -46800
+            56974 -46800
+            60270 -50096
+            60270 -50920
           )
         )
         (wire
-          (path Component 180
-            56000 -47192
-            56799 -47192
-            56957 -47350
+          (path Copper 360
+            56284 -40663
+            56021 -40400
           )
         )
         (wire
-          (path Component 180
-            56000 -47192
-            56000 -47363
+          (path Copper 360
+            57370 -40250
+            56697 -40250
+            56284 -40663
           )
         )
         (wire
-          (path Component 180
-            56000 -46975
-            56000 -47192
+          (path Copper 360
+            55500 -40400
+            56021 -40400
           )
         )
         (wire
-          (path Component 180
-            55175 -48075
-            55887 -47363
-            56000 -47363
-          )
-        )
-        (wire
-          (path Component 180
-            55175 -48075
-            55175 -48606
-            56535 -49966
-            58129 -49966
-            59120 -48975
-            60219 -48975
-            60270 -49026
-            60270 -49470
-          )
-        )
-      )
-      (net VAA
-        (wire
-          (path Component 180
-            61488 -46225
-            61488 -34713
-            61000 -34225
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -46225
-            61488 -46225
-          )
-        )
-        (wire
-          (path Component 180
-            62212 -47325
-            62212 -46949
-            61488 -46225
-          )
-        )
-        (wire
-          (path Component 180
-            62700 -47325
-            63189 -47814
-            63189 -48376
-            61613 -49952
-            60047 -49952
-            59565 -49470
-          )
-        )
-        (wire
-          (path Component 180
-            62527 -47325
-            62700 -47325
-          )
-        )
-        (wire
-          (path Component 180
-            62527 -47325
-            62212 -47325
-          )
-        )
-        (wire
-          (path Component 180
-            59500 -32200
-            59500 -32758
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -34225
-            61000 -33837
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -33837
-            59921 -32758
-            59500 -32758
-          )
-        )
-        (wire
-          (path Component 180
-            59630 -46350
-            60043 -46350
-          )
-        )
-        (wire
-          (path Component 180
-            61000 -46225
-            60168 -46225
-            60043 -46350
-          )
-        )
-      )
-      (net /SignalOut
-        (wire
-          (path Component 180
-            58500 -41500
-            58500 -42018
-          )
-        )
-        (wire
-          (path Component 180
-            59630 -46850
-            59217 -46850
-          )
-        )
-        (wire
-          (path Component 180
-            59217 -46850
-            59217 -42735
-            58500 -42018
+          (path Copper 360
+            57000 -46350
+            56325 -46350
           )
         )
       )
       (net /SignalOpt101
         (wire
-          (path Component 180
-            57370 -46850
-            57783 -46850
+          (path Copper 240
+            57370 -40750
+            56930 -40750
           )
         )
         (wire
-          (path Component 180
-            56730 -49470
-            57783 -48417
-            57783 -46850
-          )
-        )
-      )
-      (net "N-000005"
-        (wire
-          (path Component 180
-            56000 -36525
-            56000 -34975
+          (path Copper 240
+            56730 -50920
+            56730 -48487
+            57794 -47423
+            57794 -44223
+            56930 -43359
+            56930 -40750
           )
         )
       )
-      (net "N-000004"
+      (net /SignalOut
         (wire
-          (path Component 180
-            61000 -36525
-            61000 -34975
+          (path Copper 240
+            61500 -32500
+            61500 -33065
+          )
+        )
+        (wire
+          (path Copper 240
+            59630 -40750
+            60070 -40750
+          )
+        )
+        (wire
+          (path Copper 240
+            60070 -40750
+            60324 -40496
+            60324 -34241
+            61500 -33065
+          )
+        )
+      )
+      (net /Vin+
+        (wire
+          (path Component 360
+            61500 -37800
+            58200 -34500
+            54250 -34500
+          )
+        )
+        (wire
+          (path Component 360
+            61500 -38800
+            61500 -37800
+          )
+        )
+      )
+      (net "/Vin-"
+        (wire
+          (path Copper 360
+            55500 -37800
+            56166 -37134
+            56166 -34054
+            54250 -32138
+          )
+        )
+        (wire
+          (path Component 360
+            55500 -38800
+            55500 -37800
+          )
+        )
+      )
+      (net VAA
+        (wire
+          (path Copper 360
+            60784 -46350
+            61050 -46350
+            61500 -46800
+          )
+        )
+        (wire
+          (path Copper 360
+            60784 -46350
+            60784 -43493
+            60356 -43065
+            60356 -41250
+          )
+        )
+        (wire
+          (path Copper 360
+            60676 -46350
+            60784 -46350
+          )
+        )
+        (wire
+          (path Copper 360
+            63000 -46350
+            61950 -46350
+            61500 -46800
+          )
+        )
+        (wire
+          (path Copper 360
+            60356 -41250
+            60656 -40950
+            61500 -40950
+          )
+        )
+        (wire
+          (path Copper 360
+            60356 -41250
+            60130 -41250
+          )
+        )
+        (wire
+          (path Copper 360
+            60000 -46350
+            60676 -46350
+          )
+        )
+        (wire
+          (path Copper 360
+            61500 -40400
+            61500 -40950
+          )
+        )
+        (wire
+          (path Copper 360
+            59630 -41250
+            60130 -41250
+          )
+        )
+        (wire
+          (path Copper 360
+            61500 -46800
+            59565 -48735
+            59565 -50920
           )
         )
       )

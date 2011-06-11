@@ -1,52 +1,52 @@
-Cmp-Mod V01 Created by CVpcb (20090216-final) date = Tue 06 Oct 2009 15:41:50 PDT
+Cmp-Mod V01 Created by CvPCB (2010-03-14)-final date = Fri 10 Jun 2011 03:40:29 PM PDT
 
 BeginCmp
 TimeStamp = /4ACA5CB8;
 Reference = C1;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SM1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ACA5CBC;
 Reference = C2;
-ValeurCmp = 0.1uF;
-IdModule  = SM0805;
+ValeurCmp = 1uF;
+IdModule  = SM1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ACA5D39;
 Reference = C3;
 ValeurCmp = 10uF;
-IdModule  = SM0805;
+IdModule  = SM1210;
 EndCmp
 
 BeginCmp
 TimeStamp = /4ACA5D3C;
 Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29256;
+Reference = C5;
 ValeurCmp = 0.1uF;
-IdModule  = SM0805;
+IdModule  = SM1210;
 EndCmp
 
 BeginCmp
-TimeStamp = /4ACA6301;
-Reference = D1;
-ValeurCmp = LED;
-IdModule  = LED_SM0805;
+TimeStamp = /4DF2924F;
+Reference = C6;
+ValeurCmp = 0.1uF;
+IdModule  = SM1210;
 EndCmp
 
 BeginCmp
-TimeStamp = /4ACA6830;
-Reference = D2;
-ValeurCmp = LED;
-IdModule  = LED_SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4AC69DD9;
-Reference = K1;
-ValeurCmp = POWER;
-IdModule  = SCREW_TERMINAL_3;
+TimeStamp = /4DF290B1;
+Reference = DC1;
+ValeurCmp = DCW08;
+IdModule  = DCW08;
 EndCmp
 
 BeginCmp
@@ -64,17 +64,59 @@ IdModule  = BNC;
 EndCmp
 
 BeginCmp
-TimeStamp = /4ACA62EF;
-Reference = R1;
-ValeurCmp = 1.3k;
-IdModule  = SM0805;
+TimeStamp = /4DF288DA;
+Reference = P3;
+ValeurCmp = 9-18VDC;
+IdModule  = DCJACK_2PIN;
 EndCmp
 
 BeginCmp
-TimeStamp = /4ACA6821;
-Reference = R2;
-ValeurCmp = 1.3k;
-IdModule  = SM0805;
+TimeStamp = /4DF297FE;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29806;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29811;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29810;
+Reference = P7;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29CEC;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29CEF;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DF29CF7;
+Reference = P10;
+ValeurCmp = CONN_1;
+IdModule  = MOUNT_HOLE_4_40;
 EndCmp
 
 BeginCmp

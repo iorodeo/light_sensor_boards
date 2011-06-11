@@ -1,14 +1,9 @@
-update=Thu 09 Jun 2011 05:52:15 PM PDT
-last_client=pcbnew
+update=Fri 10 Jun 2011 11:42:02 AM PDT
+last_client=cvpcb
 [general]
 version=1
 RootSch=Opt101.sch
 BoardNm=Opt101.brd
-[cvpcb]
-version=1
-NetIExt=.net
-[cvpcb/libraries]
-EquName1=devcms
 [common]
 NetDir=
 [eeschema]
@@ -98,7 +93,12 @@ TxtLar=120
 MSegLar=150
 WpenSer=10
 [pcbnew/libraries]
-LibDir=../../light_sensor_boards
 LibName1=divers
 LibName2=libcms
 LibName3=light_sensor_boards
+LibDir=../../light_sensor_boards
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
