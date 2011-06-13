@@ -37,9 +37,10 @@
 |   | P2    | CONN SOCKET BNC R/A 50 OHM PCB   | digikey      | A97555-ND      |        1 |  2.30 |
 |   | P3    | Male 2 Position 6mm 2 Terminal   | jameco       | 137673         |        1 |  0.45 |
 |   | P3    | AC/DC Power Supply 12V 1A 12W    | jameco       | 252824         |        1 | 12.95 |
-|   | P4-10 |                                  |              |                |          |       |
+|   | P4-10 | STDOFF HEX FLA-RET 4-40 .375"L   | digikey      | 8440BK-ND      |        5 |  0.84 |
+|   | P4-10 | SCREW MACHINE PHIL 4-40X1/4 SS   | digikey      | H703-ND        |        5 |  0.05 |
 |   | R1    | RES 634 OHM 1/4W 1% 1210 SMD     | digikey      | RHM634BDCT-ND  |        1 |  0.36 |
 |   | U1    | IC OPAMP BUFFER 180MHZ SGL 8SOIC | digikey      | 296-24142-1-ND |        1 |  9.28 |
 |---+-------+----------------------------------+--------------+----------------+----------+-------|
-| # | total |                                  |              |                |          | 89.39 |
-#+TBLFM: @15$7=(@I$quantity..@II$quantity)*(@I$cost..@II$cost);%.2f;N
+| # | total |                                  |              |                |          | 93.84 |
+#+TBLFM: @16$7=(@I$quantity..@II$quantity)*(@I$cost..@II$cost);%.2f;N
